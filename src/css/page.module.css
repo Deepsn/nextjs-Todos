@@ -1,0 +1,22 @@
+.background {
+    background-color: var(--theme-color);
+}
+
+.text {
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: theme(colors.stone.900);
+    padding: theme(margin.4);
+}
+
+.navbaritem {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all .2s ease-in;
+}
+
+.navbaritem:hover {
+    text-decoration-color: white;
+}

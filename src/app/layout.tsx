@@ -1,5 +1,6 @@
+import Navbar from '@/components/navbar';
 import './globals.css';
-import style from "./page.module.css";
+import style from "@/css/page.module.css";
 
 export const metadata = {
 	title: 'Todos App',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={style.background}>{children}</body>
+			<body className={style.background}>
+				<Navbar/>
+				{children}
+			</body>
 		</html>
 	)
 }
