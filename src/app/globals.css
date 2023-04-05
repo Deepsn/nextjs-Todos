@@ -6,3 +6,7 @@
     --theme-color: theme(colors.black);
     --text-color: theme(colors.white);
 }
+
+body {
+    background-color: var(--theme-color);
+}
