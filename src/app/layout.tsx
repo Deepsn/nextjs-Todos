@@ -4,7 +4,7 @@ import style from "@/css/page.module.css";
 
 export const metadata = {
 	title: 'Todos App',
-	description: 'Todos app made for learning',
+	description: 'Todo app made for learning',
 };
 
 export default function RootLayout({
@@ -14,9 +14,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={style.background}>
+			<body>
 				<Navbar/>
-				{children}
+				<main>
+					{children}
+				</main>
 			</body>
 		</html>
 	)

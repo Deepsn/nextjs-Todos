@@ -1,0 +1,26 @@
+.navbar {
+    background-color: theme(colors.stone.900);
+    padding: theme(padding.4);
+}
+
+.navbar a, .navbar img {
+    transition: text-decoration-color .2s ease-in, filter .8s ease-out;
+}
+
+.navbar a {
+    color: var(--text-color);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: theme(margin.4);
+    margin-right: theme(margin.4);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.navbar a:hover {
+    text-decoration-color: white;
+}
+
+.navbar img:hover {
+    filter: brightness(10);
+}

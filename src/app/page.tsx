@@ -2,8 +2,13 @@ import style from "@/css/page.module.css";
 
 export default function Home() {
 	return (
-		<main>
-			<h1 className={style.text}>Main page</h1>
-		</main>
+		<section id={style.intro}>
+			<h1>Main page</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, facilis?</p>
+			<div>
+				<button>Learn more</button>
+				<button>Login</button>
+			</div>
+		</section>	
   	)
 }
