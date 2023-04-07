@@ -1,0 +1,29 @@
+#intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: theme(padding.24);
+    padding-bottom: theme(padding.32);
+    width: 100%;
+    height: 100%;
+}
+
+#intro * {
+    @apply self-center;
+    color: var(--text-color);
+}
+
+#intro h1 {
+    @apply text-4xl font-bold;
+}
+
+#intro p {
+    @apply py-3 my-5;
+}
+
+#intro div * {
+    @apply font-bold mx-1 px-4 py-2 rounded-full border-2 border-transparent underline transition-all duration-500 ease-out;
+}
+
+#intro div *:hover {
+    @apply bg-neutral-900 border-white decoration-transparent;
+}

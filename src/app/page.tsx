@@ -1,4 +1,5 @@
-import style from "@/css/page.module.css";
+import Link from "next/link";
+import style from "@/css/home.module.css";
 
 export default function Home() {
 	return (
@@ -6,8 +7,8 @@ export default function Home() {
 			<h1>Main page</h1>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, facilis?</p>
 			<div>
-				<button>Learn more</button>
-				<button>Login</button>
+				<Link href={"/about"}>Learn more</Link>
+				<Link href={"/login"}>Login</Link>
 			</div>
 		</section>	
   	)
